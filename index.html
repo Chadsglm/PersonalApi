@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Person API</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="col-sm-12">
+        <div class="col-sm-6">
+            <h1>PERSON LIST</h1>
+            <form>
+                <div class="form-group">
+                    <div class="col-sm-12 no-padding">
+                        <div class="col-sm-3 no-padding">
+                            <label for="gender">Gender</label>
+                            <input type="text" class="form-control" id="gender" aria-describedby="emailHelp">
+                        </div>
+                        <div class="col-sm-9 no-padding">
+                            <img src="https://randomuser.me/api/portraits/thumb/women/93.jpg" id="picture" class="img-circle pull-right" alt="Cinque Terre" width="304" height="236">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <input type="text" class="form-control" id="address" aria-describedby="emailHelp">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="text" class="form-control" id="email" aria-describedby="emailHelp">
+                </div>
+
+                <div class="form-group">
+                    <label for="dob">Date of birth</label>
+                    <input type="text" class="form-control" id="dob" aria-describedby="emailHelp">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="text" class="form-control" id="phone" aria-describedby="emailHelp">
+                </div>
+
+                <div class="col-sm-12 no-padding">
+                    <button type="button" id="likePerson" class="btn btn-primary pull-left">LIKE</button>
+                    <button type="button" id="generate" class="btn btn-danger pull-right">DO NOT LIKE</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="col-sm-6">
+                <h1>MY LIST</h1>
+            <div id="personList"></div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
